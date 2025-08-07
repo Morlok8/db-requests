@@ -19,7 +19,7 @@ class StocksController extends Controller
         $validated = $request->validate([
             'page' => 'numeric',
             'limit' => 'numeric|max:500',
-            'dateTo' => 'required|date_format:Y-m-d',
+            //'dateTo' => 'required|date_format:Y-m-d',
         ]);
 
         $currentDate = Carbon::now()->format('Y-m-d');
@@ -30,7 +30,7 @@ class StocksController extends Controller
 
         $date_to = $request->dateTo;
 
-        $response = Http::get('http://109.73.206.144:6969/api/stocks?dateFrom='.$currentDate.'&dateTo='.$date_to.'&page='.$page.'&key=E6kUTYrYwZq2tN4QEtyzsbEBk3ie&limit='.$limit);
+        $response = Http::get('http://109.73.206.144:6969/api/stocks?dateFrom='.$currentDate.'&page='.$page.'&key=E6kUTYrYwZq2tN4QEtyzsbEBk3ie&limit='.$limit);
 
         $data = $response->body();
 
