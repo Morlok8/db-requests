@@ -21,9 +21,9 @@
 <h3>Маршруты API</h3>
 <p>get: host/api/stock/show --- получить список товаров со склада и записать их в бд </p>
 
-<h4><h4>
-Админ панель базы данных:
-https://cobra.beget.com/phpMyAdmin/db_structure.php?db=mikehost57_t
-login: mikehost57_t
-password: inGPn4yBMa
+<h4>Админ панель базы данных:</h4>
+
+<p>https://cobra.beget.com/phpMyAdmin/db_structure.php?db=mikehost57_t</p>
+<p>login: mikehost57_t</p>
+<p>password: inGPn4yBMa</p>
 
